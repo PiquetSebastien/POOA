@@ -1,5 +1,3 @@
-package drawing;
-
 import java.awt.Graphics;
 import java.awt.Point;
 
@@ -21,7 +19,7 @@ public abstract class Shape {
 	public abstract void paint(Graphics g);
 	
 	/**
-	 * renvoie true si la forme occupe sur le point donnŽ
+	 * renvoie true si la forme occupe sur le point donnï¿½
 	 */
 	public abstract boolean isOn(Point p);
 }

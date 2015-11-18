@@ -1,5 +1,3 @@
-package drawing;
-
 import java.awt.Color;
 
 public class RectangleButtonListener extends ShapeButtonListener {

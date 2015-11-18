@@ -1,4 +1,3 @@
-package drawing;
 
 import java.awt.Color;
 import java.awt.Point;

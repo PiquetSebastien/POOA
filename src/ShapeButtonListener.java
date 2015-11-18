@@ -1,5 +1,3 @@
-package drawing;
-
 import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -8,7 +6,7 @@ import java.awt.event.MouseListener;
 
 /**
  * Classe abstraite (Template Pattern) pour les listeners des boutons de
- * cration de formes.
+ * crï¿½ation de formes.
  */
 public abstract class ShapeButtonListener implements ActionListener, MouseListener {
 
@@ -28,8 +26,8 @@ public abstract class ShapeButtonListener implements ActionListener, MouseListen
 	}
 	
 	/**
-	 * Une fois la souris relache, cre la forme ˆ la bonne dimension 
-	 * et enlve le MouseListener.
+	 * Une fois la souris relachï¿½e, crï¿½e la forme ï¿½ la bonne dimension 
+	 * et enlï¿½ve le MouseListener.
 	 * Template Pattern
 	 */
 	public void mouseReleased(MouseEvent arg0) {
@@ -47,7 +45,7 @@ public abstract class ShapeButtonListener implements ActionListener, MouseListen
 	}
 	
 	/**
-	 * Mthode de cration de la forme, ˆ redfinir dans les sous classes.
+	 * Mï¿½thode de crï¿½ation de la forme, ï¿½ redï¿½finir dans les sous classes.
 	 * Template Pattern
 	 */
 	protected  abstract Shape createShape();
