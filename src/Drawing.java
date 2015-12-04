@@ -24,6 +24,10 @@ public class Drawing extends JPanel implements Iterable<Shape>, Observable {
 		return shapes.iterator();
 	}
 	
+	public int getSelectedShapeSize(){
+		return shapes.size();
+	}
+	
 	/**
 	 * Ajoute une forme au dessin et redessine
 	 */
