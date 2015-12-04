@@ -24,8 +24,8 @@ public class DrawingMouseListener implements MouseMotionListener, MouseListener 
 			currentShape.setOrigin(e.getPoint());
 			drawing.repaint();
 		}
-		if(shapeListe.size() != 0){
-			for (Shape shape: shapeListe){
+		if(drawing.getSelectedShapeSize() != 0){
+			for (Shape shape: drawing.getShapesSelection()){
 				shape.setOrigin(e.getPoint());
 				drawing.repaint();
 			}
@@ -50,8 +50,8 @@ public class DrawingMouseListener implements MouseMotionListener, MouseListener 
 	public void mouseReleased(MouseEvent e) {
 		if(e.getButton() == 1){
 			currentShape = null;
-			if (shapeListe.size() != 0){
-				shapeListe.clear();
+			if (drawing.getSelectedShapeSize() != 0){
+				drawing.clearSelection();
 			}
 		}
 
@@ -61,7 +61,7 @@ public class DrawingMouseListener implements MouseMotionListener, MouseListener 
 		if (e.getButton() == 2){
 			for(Shape shape : drawing){
 				if(shape.isOn(e.getPoint())){
-					shapeListe.add(shape);
+					drawing.addShapeInSelection(shape);
 				}
 			}
 		}

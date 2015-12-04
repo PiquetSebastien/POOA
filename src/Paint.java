@@ -60,7 +60,7 @@ public class Paint implements Observer {
 		clearButton.addActionListener(new ClearButtonListener(drawing));
 		circleButton.addActionListener(new CircleButtonListener(drawing));
 		rectangleButton.addActionListener(new RectangleButtonListener(drawing));
-		//duplicateButton.addActionListener(new DuplicateButtonListener(drawing));
+		duplicateButton.addActionListener(new DuplicateButtonListener(drawing));
 		
 		//listeners pour la zone de dessin
 		DrawingMouseListener l = new DrawingMouseListener(drawing);
